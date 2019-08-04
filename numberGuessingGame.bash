@@ -10,7 +10,8 @@ echo "guess random number of 1 to 100"
 echo "==============================="
 
 #diplay current date and time
-echo $date
+date
+echo ""
 
 function numberGuessingGame(){
 	#create random number 1 to 100
