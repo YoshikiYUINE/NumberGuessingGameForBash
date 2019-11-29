@@ -1,5 +1,5 @@
+#!/bin/bash
 #this is bash file
-#!bin/bash/
 
 #run this file "bash ./numberGuessingGame.bash"
 
@@ -26,7 +26,7 @@ function numberGuessingGame(){
 		echo $i "remaining"
 		echo "enter your guess number 1 to 100"
 		#get guess number from user
-		read guessNumber
+		read -r guessNumber
 		#judge guess number integer 3 digit,0 to 9
 		if [[ $guessNumber =~ [0-9]{1,3} ]]
 		then
@@ -59,7 +59,7 @@ function numberGuessingGame(){
 	fi
 	#close game
 	echo "finished! enter any key"
-	read anyKey
+	read -r anykey
 }
 #start function numberGuessingGame
 numberGuessingGame
